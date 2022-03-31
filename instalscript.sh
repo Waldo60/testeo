@@ -4,7 +4,8 @@
 msg () {
 BRAN='\033[1;37m' 
 && VERMELHO='\e[31m' 
-&& VERDE='\e[32m' && AMARELO='\e[33m'
+&& VERDE='\e[32m' 
+&& AMARELO='\e[33m'
 AZUL='\e[34m' 
 && MAGENTA='\e[35m' 
 && MAG='\033[1;36m' 
