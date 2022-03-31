@@ -8,7 +8,7 @@ msg () {
     AMARELO='\e[33m'  >> amarillo
     AZUL='\e[34m'     >> azul
     MAGENTA='\e[35m'  >> purpura
-    CYAN='\033[1;36m'  >> celeste
+    CYAN='\033[1;36m' >> celeste
     NEGRITO='\e[1m'   >> negro
     SEMCOR='\e[0m'    >> sin color
  case $1 in
