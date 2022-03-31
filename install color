@@ -8,17 +8,17 @@ msg () {
     AMARELO='\e[33m'  >> amarillo
     AZUL='\e[34m'     >> azul
     MAGENTA='\e[35m'  >> purpura
-    MAG='\033[1;36m'  >> celeste
+    CYAN='\033[1;36m'  >> celeste
     NEGRITO='\e[1m'   >> negro
     SEMCOR='\e[0m'    >> sin color
  case $1 in
  
-   -ne)cor="${VERMELHO}${NEGRITO}" && echo -ne "${cor}${2}${SEMCOR}";;
-   -ama)cor="${AMARELO}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
+   -ne)cor="${VERMELHO}${NEGRITO}"                 && echo -ne "${cor}${2}${SEMCOR}";;
+   -ama)cor="${AMARELO}${NEGRITO}"                 && echo -e "${cor}${2}${SEMCOR}";;
    -verm)cor="${AMARELO}${NEGRITO}[!] ${VERMELHO}" && echo -e "${cor}${2}${SEMCOR}";;
-   -azu)cor="${MAG}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
-   -verd)cor="${VERDE}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
-   -bra)cor="${VERMELHO}" && echo -ne "${cor}${2}${SEMCOR}";;
+   -azu)cor="${MAG}${NEGRITO}"                     && echo -e "${cor}${2}${SEMCOR}";;
+   -verd)cor="${VERDE}${NEGRITO}"                  && echo -e "${cor}${2}${SEMCOR}";;
+   -bra)cor="${VERMELHO}"                          && echo -ne "${cor}${2}${SEMCOR}";;
    "-bar2"|"-bar")cor="${VERMELHO}***************************************************" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
