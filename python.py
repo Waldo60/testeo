@@ -15,6 +15,7 @@ sg() {
       COLOR[5]='\e[91m'     #MAGENTA='\e[35m'
       COLOR[6]='\033[1;97m' #MAG='\033[1;36m'
    else
+   
       local COL=0
       for number in $(cat $colors); do
          case $number in
@@ -29,6 +30,7 @@ sg() {
          let COL++
       done
    fi
+   
    NEGRITO='\e[1m'
    SEMCOR='\e[0m'
    case $1 in
@@ -39,6 +41,7 @@ sg() {
    -azu) cor="${COLOR[6]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}" ;;
    -verd) cor="${COLOR[2]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}" ;;
    -bra) cor="${COLOR[0]}${SEMCOR}" && echo -e "${cor}${2}${SEMCOR}" ;;
+   
    "-bar2" | "-bar") cor="${COLOR[1]}————————————————————————————————————————————————————" && echo -e "${SEMCOR}${cor}${SEMCOR}" ;;
    -tit) echo -e "\e[97m \033[1;41m| #-#-► 🐲 SCRIPT VPS•MX ◄-#-# | \033[1;49m\033[1;49m \033[1;31m[ \033[1;32m $vesaoSCT " && echo -e "${SEMCOR}${cor}${SEMCOR}" ;;
    esac
