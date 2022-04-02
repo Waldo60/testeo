@@ -1,5 +1,6 @@
 sg() {
    #ACTULIZADOR
+   
    [[ ! -e /etc/versin_script ]] && echo 1 >/etc/versin_script
    v11=$(cat /etc/versin_script_new)
    v22=$(cat /etc/versin_script)
